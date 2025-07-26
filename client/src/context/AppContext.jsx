@@ -24,7 +24,11 @@ const AppContextProvider = (props) => {
         try {
             
             const token = await getToken()
-            const {data} = await axios.get(backendUrl+'/api/user/credits',{headers:{token}})
+            const {data} = await axios.get(backendUrl+'/api/user/credits',{
+                 headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
             if(data.success){
                 setCredit(data.credits)
                 console.log(data.credits)
@@ -52,7 +56,11 @@ const AppContextProvider = (props) => {
             const formData = new FormData()
             image && formData.append('image',image)
 
-            const {data} = await axios.post(backendUrl+ '/api/image/remove-bg' ,formData , {headers:{token}} )
+            const {data} = await axios.post(backendUrl+ '/api/image/remove-bg' ,formData ,{
+                headers: {
+                Authorization: `Bearer ${token}`
+                }
+            })
 
             if(data.success){
                 setResultImage(data.resultImage)
