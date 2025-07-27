@@ -31,7 +31,6 @@ const AppContextProvider = (props) => {
             })
             if(data.success){
                 setCredit(data.credits)
-                console.log(data.credits)
             }
         } catch (error) {
             console.log(error)

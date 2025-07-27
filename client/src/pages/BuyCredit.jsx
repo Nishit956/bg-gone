@@ -25,7 +25,6 @@ const BuyCredit = () => {
       })
 
       const data = await res.json()
-      console.log('Stripe session:', data)
 
       if (!data.id) {
         console.error('No session ID returned from backend')
@@ -58,7 +57,7 @@ const BuyCredit = () => {
             </p>
             <button
               onClick={() => handleBuy(item)}
-              className='w-full bg-gray-800 text-white mt-8 text-sm rounded-md py-2.5 min-w-52'
+              className='w-full bg-gray-800 text-white mt-8 text-sm rounded-md py-2.5 min-w-52 cursor-pointer'
             >
               Purchase
             </button>

@@ -77,8 +77,7 @@ router.post('/webhook', bodyParser.raw({ type: 'application/json' }), async (req
         console.warn(`❌ No user found with clerkId: ${userId}`)
         return res.status(404).send('User not found')
       }
-
-      console.log(`✅ Added ${creditsToAdd} credits to user ${user.clerkId}`)
+      
       res.status(200).json({ received: true })
     } catch (err) {
       console.error('❌ Error updating user credits:', err)

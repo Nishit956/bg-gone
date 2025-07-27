@@ -17,14 +17,11 @@ const authUser = async (req, res, next) => {
       secretKey: process.env.CLERK_SECRET_KEY,
     })
 
-    console.log('🔐 Token received:', token)
-    console.log('✅ Verified Clerk ID:', payload.sub)
-
     // Attach user ID to request for downstream usage
     req.clerkId = payload.sub
     next()
   } catch (error) {
-    console.error('❌ Auth error:', error.message)
+    console.error(' Auth error:', error.message)
     return res.status(401).json({ success: false, message: 'Not Authorized. Login Again.' })
   }
 }

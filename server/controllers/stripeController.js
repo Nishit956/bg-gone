@@ -7,8 +7,6 @@ export const createCheckoutSession = async (req, res) => {
   const { id, price, credits } = req.body
   const userId = req.clerkId  // ✅ Retrieved from auth middleware
 
-  console.log("✅ Clerk ID in controller:", userId)
-
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
