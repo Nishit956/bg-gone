@@ -43,7 +43,7 @@ const Result = () => {
           <button className="px-8 py-2.5 text-violet-600 text-sm border border-violet-600 rounded-full hover:scale-105 transition-all duration-700">
             Try another image
           </button>
-          <a href={resultImage} download className="px-8 py-2.5 text-white text-sm bg-gradient-to-r from-violet-600 to bg-fuchsia-500 rounded-full hover:scale-105 transition-all duration-700">Download imagge </a>
+          <a href={resultImage} download className="px-8 py-2.5 text-white text-sm bg-gradient-to-r from-violet-600 to bg-fuchsia-500 rounded-full hover:scale-105 transition-all duration-700">Download image </a>
         </div>}
       </div>
     </div>
