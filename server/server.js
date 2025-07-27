@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 4000
 const app = express()
 await connectDB()
 
-app.use('/api', webhookRoute)
+app.use('/api/webhook', webhookRoute)
 
 //Intialize Middlewares
 app.use(express.json())
