@@ -40,10 +40,10 @@ const Result = () => {
 
         {/* ---------- buttons ----------- */}
         {resultImage && <div className="flex justify-center sm:justify-end items-center flex-wraps gap-4 mt-6">
-          <button className="px-8 py-2.5 text-violet-600 text-sm border border-violet-600 rounded-full hover:scale-105 transition-all duration-700">
+          <button className="px-8 py-2.5 text-teal-600 text-sm border border-teal-400 rounded-full hover:scale-105 transition-all duration-700">
             Try another image
           </button>
-          <a href={resultImage} download className="px-8 py-2.5 text-white text-sm bg-gradient-to-r from-violet-600 to bg-fuchsia-500 rounded-full hover:scale-105 transition-all duration-700">Download image </a>
+          <a href={resultImage} download className="px-8 py-2.5 text-white text-sm bg-gradient-to-r from-teal-400 to-emerald-500 rounded-full hover:scale-105 transition-all duration-700">Download image </a>
         </div>}
       </div>
     </div>

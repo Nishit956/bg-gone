@@ -35,15 +35,15 @@ export const assets = {
 export const testimonialsData = [
     {
         id: 1,
-        text: "I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.",
-        author: "Richard Nelson",
+        text: "I've been using bg.removal for nearly two months, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.",
+        author: "Gaurav",
         image: profile_img_1,
         jobTitle:'Web Developer'
     },
     {
         id: 2,
-        text: "I've been using bg.removal for nearly 6 months, I had a fantastic experience. The quality is top-notch. I recommend others to try this app.",
-        author: "Donald Jackman",
+        text: "I've been using bg.removal for nearly 1 months, I had a fantastic experience. The quality is top-notch. I recommend others to try this app.",
+        author: "Jas",
         image: profile_img_2,
         jobTitle:'UI Deginer'
     },
