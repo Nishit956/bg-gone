@@ -20,6 +20,11 @@ app.use(cors())
 
 // API routes
 app.get('/',(req,res)=> res.send("API Working"))
+
+app.get('/ping', (req, res) => {
+    res.status(200).send("OK");
+});
+
 app.use('/api/user',userRouter)
 app.use('/api/image',imageRouter)
 app.use('/api',stripeRoutes)
